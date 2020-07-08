@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Appli Shopify</string>
+    <string name="add_to_cart_button">Add to cart</string>
+    <string name="product_added">Product successfully added to Bag</string>
+    <string name="go_to_cart">Go to cart</string>
+    <string name="go_to_checkout">Go to checkout</string>
+    <string name="login">Login</string>
+    <string name="checkout">Checkout Page</string>
+    <string name="associate_customer">Associate customer to the checkout</string>
+    <string name="webUrl_checkout">Web Checkout</string>
+    <string name="native_checkout">Native Checkout</string>
+    <string name="shipping_address">Shipping address</string>
+    <string name="fname">Fisrt name</string>
+    <string name="lname">Last name</string>
+    <string name="country">Country</string>
+    <string name="city">City</string>
+    <string name="line1">First address line</string>
+    <string name="line2">Second address line</string>
+    <string name="submit">Submit new address</string>
+</resources>

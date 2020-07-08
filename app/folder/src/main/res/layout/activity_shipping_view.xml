@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShippingView">
+
+    <TextView
+        android:id="@+id/address_header"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/shipping_address"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textColor="#4CAF50"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/address_shippingAddressLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/address_DefaultAddressLayout">
+
+        <EditText
+            android:id="@+id/address_newFname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/fname"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/address_newLname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/lname"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/address_newCountry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/country"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/address_newCity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/city"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/address_newLine1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/line1"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/address_newLine2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/line2"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/address_submitNewAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#B2FF59"
+            android:gravity="center"
+            android:onClick="AddressValidate"
+            android:text="@string/submit" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/address_DefaultAddressLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:backgroundTint="#D6D6D6"
+        android:onClick="AddressValidate"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/address_header">
+
+        <TextView
+            android:id="@+id/address_defaultFname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="@string/fname" />
+
+        <TextView
+            android:id="@+id/address_defaultLname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="@string/lname" />
+
+        <TextView
+            android:id="@+id/address_defaultCountry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="@string/country" />
+
+        <TextView
+            android:id="@+id/address_defaultCity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="@string/city" />
+
+        <TextView
+            android:id="@+id/address_defaultLine1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="@string/line1" />
+
+        <TextView
+            android:id="@+id/address_defaultLine2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/line2" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/address_addressAddedText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/address_shippingAddressLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
