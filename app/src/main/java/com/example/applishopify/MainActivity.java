@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
                                                         )
                                                 )
                                         )
-                                        .images(arg -> arg.first(10), imageEdges ->
+                                        .images(arg -> arg.first(1), imageEdges ->
                                                 imageEdges.edges(imageNode ->
                                                         imageNode.node(image ->
                                                                 image.transformedSrc()

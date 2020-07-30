@@ -8,6 +8,7 @@ import android.content.Intent;
 import android.content.res.ColorStateList;
 import android.net.Uri;
 import android.os.Bundle;
+import android.provider.Browser;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -170,6 +171,9 @@ public class CheckoutView extends AppCompatActivity {
 
             case R.id.checkout_view_webCheckout:
                 Intent webIntent = new Intent(Intent.ACTION_VIEW,Uri.parse(view.getTag().toString()));
+                Bundle bundle = new Bundle();
+                bundle.putString("X-Shopify-Customer-Access-Token", customerAccessToken);
+                webIntent.putExtra(Browser.EXTRA_HEADERS, bundle);
                 startActivity(webIntent);
                 break;
         }
